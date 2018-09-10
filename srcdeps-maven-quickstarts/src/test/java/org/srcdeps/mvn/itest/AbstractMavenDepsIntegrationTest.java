@@ -276,7 +276,7 @@ public abstract class AbstractMavenDepsIntegrationTest {
     }
 
     protected WrappedMavenExecutionResult build(String project, String... goals) throws Exception {
-        log.error("Building test project {}", project);
+        log.error("Building test project [{}]", project);
 
         final String quickstartRepoDir = "org/l2x6/srcdeps/quickstarts/" + project;
         SrcdepsCoreUtils.deleteDirectory(mvnLocalRepoPath.resolve(quickstartRepoDir));
